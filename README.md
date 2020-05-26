@@ -1,7 +1,7 @@
 # CS569 Homework 07
 ## Dependency Injection Framework
 ### Coding Exercise
-* Create a service that has a method `getData()` that returns the following JSON object:
+* Create a service that has a method `getData()` that returns an observable with the following JSON object:
 ```json
 {
    "results":[
