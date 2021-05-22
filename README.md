@@ -1,9 +1,9 @@
-# CS569 Homework 07
+# CS569 Homework 06
 ## Dependency Injection Framework
 ### Coding Exercise
 * Create a service that has a method `getData()` that returns an observable with the following JSON object:
 ```json
-{
+const response = {
    "results":[
       {
          "gender":"male",
@@ -44,6 +44,6 @@
 ```
 * The application should call `getData()` at bootstrap time, stringify the returned value, and save it into the `localStorage`. 
 * The service has another method `getCachedData()` that returns an observable with a JSON object reads from `localStorage`.
-* Create a custom component to display the user details using `getCachedData()` method, use pipes to format the date of birth properly and phone numbers to start with `+1`.
+* Create a new component `DisplayCache` to display the user details using `getCachedData()` method, use pipes to format the date of birth and phone numbers to start with `+1`.
 
 
