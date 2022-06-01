@@ -37,9 +37,9 @@ A card has the following HTML structure:
     <h4>Asaad Saad</h4>
     <p>Dec 1st, 2020</p>
     <p>1000 N 4th Street, Fairfield, IA 52557</p>
-    <p>+19998881111</p>
+    <p>+1-999-888-1111</p>
   </div>
 </div>
 ```
-* Use pipes to format the date of birth and phone numbers to start with `+1` and remove all hyphen symbols..
+* Use pipes to format the date of birth and phone numbers to start with `+1`..
 
