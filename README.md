@@ -1,45 +1,21 @@
-# CS569 Homework 05
-## Dependency Injection Framework
+# CS569 Homework 
 ### Coding Exercise
-* Update the global CSS styles with the following code:
-```css
-body {
-	display: flex;
-}
-```
-* Create a service that has a method `getData()` that sends an HTTP request to the following URL:
+In a new Angular application, create the following:  
+  
+  * User service `user.service.ts`
+  * Users container component `users.component.ts` (stateful)
+  * User card representational component `user.component.ts` (stateless)
+  
+Implementation details:  
+1. Create a button on your root component to Show/Hide (Mount/Unmount) the `UsersComponent` which is hidden by default. 
+2. Your service has a method `getData()` that sends a GET request to the following URL:
 ```js
 https://randomuser.me/api/?results=10
 ```
-* Create a button on your root component to Show/Hide `UsersComponent` which is hidden by default. 
-* `UsersComponent` will simply call the `getData()` method and display list of users, each user should be displayed using a reusable component called: `UserComponent`. 
-* The `UserComponent` will only display the first/last name, date of birth, full address, and phone number of the user. Each user should be displayed as a card, use the following CSS formatting:
-```css
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  margin: 10px;
-}
+Make sure you set the response type(s), you may use [JSON to TypeScript service](https://transform.tools/json-to-typescript)
+  
+3. `UsersComponent` will call the `getData()` method and display list of users (try subscribe and async pipe), each user should be displayed using `UserComponent`. 
+4. The the `UserComponent` will display the user picture, first/last name, date of birth, full address, and phone number of the user. Each user should be displayed as a card, you may use the following [Card Template](https://www.w3schools.com/howto/howto_css_cards.asp).
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.container {
-  padding: 2px 16px;
-}
-```
-A card has the following HTML structure:
-```html
-<div class="card">
-  <div class="container">
-    <h4>Asaad Saad</h4>
-    <p>Dec 1st, 2020</p>
-    <p>1000 N 4th Street, Fairfield, IA 52557</p>
-    <p>+1-999-888-1111</p>
-  </div>
-</div>
-```
-* Use pipes to format the date of birth and phone numbers to start with `+1`..
+5. Use pipes to format the date of birth, and phone numbers to start with `+1`..
 
