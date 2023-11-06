@@ -14,4 +14,4 @@ Implementation details:
 4. The the `CardComponent` will display the user's picture, first and last name, date of birth, full address, and phone number. You may use [Flowbite](https://flowbite.com/docs/components/card/).
 
 5. Format the date of birth using `date` pipe.
-
+6. Create a functional interceptor that modifies all the outgoing HTTP request headers with an iPhone 15 Pro Max user agent.
